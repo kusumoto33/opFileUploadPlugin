@@ -11,6 +11,18 @@
 /**
  * opFileHandleUtilHelper
  *
+ * @package    opFileHandlePlugin
+ * @subpackage helper
+ * @author     Yuya Watanabe <watanabe@tejimaya.com>
+ */
+
+/**
+ * Get a navigation for pageinated list
+ *
+ * @param sfPager $pager
+ * @param string  $internalUri
+ * @param Array   $options
+ *
  * @see opUtilHelper#op_include_pager_navigation()
  */
 function op_file_get_pager_navigation($pager, $internalUri, $options = array())
