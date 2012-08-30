@@ -1,0 +1,10 @@
+Navigation:
+  default_navigation_file_upload:
+    type: "defualt"
+    uri: "file"
+    sort_order: 20
+    Translation:
+      ja_JP:
+        caption: "ファイル"
+      en:
+        caption: "File"
