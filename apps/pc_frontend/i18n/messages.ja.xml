@@ -23,8 +23,16 @@
         <target>画像以外をアップロードしてください</target>
       </trans-unit>
       <trans-unit id="6">
-        <source>Upload Successful</source>
+        <source>Upload Successfully</source>
         <target>アップロード完了しました</target>
+      </trans-unit>
+      <trans-unit id="7">
+        <source>Are you sure to delete the file?</source>
+        <target>ファイルを削除しますか？</target>
+      </trans-unit>
+      <trans-unit id="8">
+        <source>Delete File Successfully</source>
+        <target>ファイルを削除しました</target>
       </trans-unit>
     </body>
   </file>

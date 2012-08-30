@@ -50,7 +50,7 @@ class fileActions extends sfActions
       }
       if ($this->form->bindAndSave($request->getParameter($this->form->getName()), $files))
       {
-        $this->getUser()->setFlash('notice', $i18n->__('Upload Successful'));
+        $this->getUser()->setFlash('notice', $i18n->__('Upload Successfully'));
       }
     }
 
@@ -86,8 +86,10 @@ class fileActions extends sfActions
     {
       $request->checkCSRFProtection();
 
+      $i18n = sfContext::getInstance()->getI18n();
+
       $file->delete();
-      $this->getUser()->setFlash('notice', 'ファイルを削除しました');
+      $this->getUser()->setFlash('notice', $i18n->__('Delete File Successfully'));
       $this->redirect('@file_index');
     }
   }
