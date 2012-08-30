@@ -1,6 +1,6 @@
 <?php
 
-class MemberFileForm extends BaseFileForm
+class FileUploadForm extends BaseFileForm
 {
   public function configure()
   {

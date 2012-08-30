@@ -32,7 +32,7 @@ class fileActions extends sfActions
    */
   public function executeUpload(sfWebRequest $request)
   {
-    $this->form = new MemberFileForm();
+    $this->form = new FileUploadForm();
 
     if ($request->isMethod(sfWebRequest::POST))
     {

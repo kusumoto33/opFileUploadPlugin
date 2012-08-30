@@ -23,7 +23,7 @@ class fileComponents extends sfComponents
    */
   public function executeUpload()
   {
-    $this->form = new MemberFileForm();
+    $this->form = new FileUploadForm();
   }
 
   /**
