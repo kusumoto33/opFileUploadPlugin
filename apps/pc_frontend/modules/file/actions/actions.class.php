@@ -70,4 +70,25 @@ class fileActions extends sfActions
       $file->getFileBin()->getBin()
     );
   }
+
+  /**
+   * Executes delete action
+   *
+   * @param sfRequest $request A request object
+   */
+  public function executeDelete(opWebRequest $request)
+  {
+    $file = Doctrine::getTable('File')->find($request->getParameter('id'));
+
+    $this->form = new sfForm();
+
+    if ($request->isMethod(sfWebRequest::POST))
+    {
+      $request->checkCSRFProtection();
+
+      $file->delete();
+      $this->getUser()->setFlash('notice', 'ファイルを削除しました');
+      $this->redirect('@file_index');
+    }
+  }
 }

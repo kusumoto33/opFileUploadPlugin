@@ -9,3 +9,7 @@ file_download:
 file_upload:
   url: /file/upload
   param: { module: file, action: upload }
+
+file_delete:
+  url: /file/delete
+  param: { module: file, action: delete }
