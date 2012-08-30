@@ -1,0 +1,11 @@
+file_index:
+  url: /file
+  param: { module: file, action: index }
+
+file_download:
+  url: /file/download
+  param: { module: file, action: download }
+
+file_upload:
+  url: /file/upload
+  param: { module: file, action: upload }
