@@ -9,9 +9,9 @@
  */
 
 /**
- * opFileHandleUtilHelper
+ * opFileUploadUtilHelper
  *
- * @package    opFileHandlePlugin
+ * @package    opFileUploadPlugin
  * @subpackage helper
  * @author     Yuya Watanabe <watanabe@tejimaya.com>
  */

@@ -11,7 +11,7 @@
 /**
  * file actions
  *
- * @package    opFileHandlePlugin
+ * @package    opFileUploadPlugin
  * @subpackage file
  * @author     Yuya Watanabe <watanabe@tejimaya.com>
  *
