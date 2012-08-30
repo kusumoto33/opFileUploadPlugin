@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<xliff version="1.0">
+  <file orginal="global" source-language="en" datatype="plaintext">
+    <body>
+      <trans-unit id="1">
+        <source>File Name</source>
+        <target>ファイル名</target>
+      </trans-unit>
+      <trans-unit id="2">
+        <source>Created At</source>
+        <target>作成日</target>
+      </trans-unit>
+      <trans-unit id="3">
+        <source>Uploaded File List</source>
+        <target>アップロードファイルリスト</target>
+      </trans-unit>
+      <trans-unit id="4">
+        <source>File Upload</source>
+        <target>ファイルアップロード</target>
+      </trans-unit>
+      <trans-unit id="5">
+        <source>Please upload file except Image</source>
+        <target>画像以外をアップロードしてください</target>
+      </trans-unit>
+      <trans-unit id="6">
+        <source>Upload Successful</source>
+        <target>アップロード完了しました</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

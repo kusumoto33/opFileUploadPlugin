@@ -36,19 +36,21 @@ class fileActions extends sfActions
 
     if ($request->isMethod(sfWebRequest::POST))
     {
+      $i18n = sfContext::getInstance()->getI18n();
+
       $files = $request->getFiles($this->form->getName());
       foreach ($files as $file)
       {
         if(false !== strpos($file['type'], 'image'))
         {
-          $this->getUser()->setFlash('notice', '画像以外をアップロードしてください');
+          $this->getUser()->setFlash('notice', $i18n->__('Please upload file except Image'));
 
           $this->redirect('file_index');
         }
       }
       if ($this->form->bindAndSave($request->getParameter($this->form->getName()), $files))
       {
-        $this->getUser()->setFlash('notice', 'アップロード完了しました');
+        $this->getUser()->setFlash('notice', $i18n->__('Upload Successful'));
       }
     }
 

@@ -1,8 +1,8 @@
 <table>
 <thead>
 <tr>
-<th>ファイル名</th>
-<th>作成日</th>
+<th><?php echo __('File Name') ?></th>
+<th><?php echo __('Created At') ?></th>
 </tr>
 </thead>
 <tbody>
