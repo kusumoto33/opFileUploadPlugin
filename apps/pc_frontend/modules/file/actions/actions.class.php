@@ -1,11 +1,35 @@
 <?php
 
+/**
+ * This file is part of the OpenPNE package.
+ * (c) OpenPNE Project (http://www.openpne.jp/)
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file and the NOTICE file that were distributed with this source code.
+ */
+
+/**
+ * file actions
+ *
+ * @package    opFileHandlePlugin
+ * @subpackage file
+ * @author     Yuya Watanabe <watanabe@tejimaya.com>
+ *
+ */
 class fileActions extends sfActions
 {
-  public function executeIndex(sfWebRequest $request)
+  /**
+   * Executes index action
+   */
+  public function executeIndex()
   {
   }
 
+  /**
+   * Executes upload action
+   *
+   * @param sfRequest $request A request object
+   */
   public function executeUpload(sfWebRequest $request)
   {
     $this->form = new MemberFileForm();
@@ -31,6 +55,11 @@ class fileActions extends sfActions
     $this->redirect('file_index');
   }
 
+  /**
+   * Executes download action
+   *
+   * @param sfRequest $request A request object
+   */
   public function executeDownload(sfWebRequest $request)
   {
     $file = Doctrine::getTable('File')->find($request->getParameter('id'));
